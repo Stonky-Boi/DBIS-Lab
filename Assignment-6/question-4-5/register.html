@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register — Q4</title>
+    <link rel="stylesheet" href="q4-5.css">
+</head>
+
+<body>
+    <main class="card">
+        <h1>Register</h1>
+        {% if error %}<div class="error">{{ error }}</div>{% endif %}
+        <form method="post">
+            <label for="user_id">User ID</label>
+            <input id="user_id" name="user_id" required />
+            <label for="mobile">Mobile Number</label>
+            <input id="mobile" name="mobile" required />
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required />
+            <button type="submit">Register</button>
+        </form>
+        <p>Already registered? <a href="/login">Login here</a></p>
+    </main>
+</body>
+
+</html>

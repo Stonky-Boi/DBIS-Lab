@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Courses — Q5</title>
+    <link rel="stylesheet" href="q4-5.css">
+</head>
+
+<body>
+    <main class="card">
+        <h1>Available BTech (CSE) Courses</h1>
+        <table class="courses">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in courses %}
+                <tr>
+                    <td>{{ c.code }}</td>
+                    <td>{{ c.name }}</td>
+                    <td>{{ c.credits }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p><a href="/welcome">Back to Welcome</a></p>
+    </main>
+</body>
+
+</html>

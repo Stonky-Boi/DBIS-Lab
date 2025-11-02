@@ -1,0 +1,9 @@
+CREATE DATABASE dbis_lab;
+USE dbis_lab;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(100) UNIQUE NOT NULL,
+    mobile VARCHAR(20) NOT NULL,
+    password VARCHAR(255) NOT NULL
+    );
