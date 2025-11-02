@@ -62,11 +62,3 @@ button:hover {
     border-radius: 6px;
     margin-bottom: 1rem;
 }
-
-.error {
-    background-color: #ffeaea;
-    color: #b00000;
-    padding: 0.6rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-}
