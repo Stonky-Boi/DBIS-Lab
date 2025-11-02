@@ -10,7 +10,7 @@
 <body>
     <main class="card">
         <h1>Register (Q3)</h1>
-        <form method="post">
+        <form action="{{ url_for('register') }}" method="post">
             <label>UserID<input name="user_id" required></label>
             <label>Mobile<input name="mobile" required></label>
             <label>Password<input name="password" type="password" required></label>

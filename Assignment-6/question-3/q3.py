@@ -20,7 +20,7 @@ def register():
         mobile = request.form.get('mobile','').strip()
         password = request.form.get('password','')
         if not (user_id and mobile and password):
-            return render_template('q3_register.html', error='Fill all fields')
+            return render_template('q3.html', error='Fill all fields')
         conn = get_conn()
         try:
             with conn.cursor() as cur:
